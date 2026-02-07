@@ -1,0 +1,5 @@
+product_id,leg,from,to,mode,distance_km
+HOKA_RUN_1,factory_to_port,Vietnam,Haiphong,truck,180
+HOKA_RUN_1,ocean,Haiphong,LosAngeles,ocean,11200
+HOKA_RUN_1,port_to_dc,LosAngeles,CA_DC,truck,120
+HOKA_RUN_1,outbound,CA_DC,Customer,truck,900

@@ -1,0 +1,5 @@
+product_id,leg,from,to,mode,distance_km,kgco2_per_ton_km,emissions_kgco2
+HOKA_RUN_1,factory_to_port,Vietnam,Haiphong,truck,180,0.1,0.0117
+HOKA_RUN_1,ocean,Haiphong,LosAngeles,ocean,11200,0.02,0.14559999999999998
+HOKA_RUN_1,port_to_dc,LosAngeles,CA_DC,truck,120,0.1,0.0078000000000000005
+HOKA_RUN_1,outbound,CA_DC,Customer,truck,900,0.1,0.058499999999999996

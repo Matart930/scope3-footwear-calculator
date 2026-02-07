@@ -1,0 +1,4 @@
+method,kgco2_per_kg
+landfill,0.2
+incineration,1.1
+recycle,-0.3

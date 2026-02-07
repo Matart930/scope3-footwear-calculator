@@ -1,0 +1,5 @@
+mode,kgco2_per_ton_km
+air,0.5
+truck,0.1
+ocean,0.02
+rail,0.04
