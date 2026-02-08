@@ -1,6 +1,6 @@
 product_id,component,material,weight_g,percent,supplier,country,weight_kg,ef_kgco2_per_kg,source,year,type,emissions_kgco2,emissions_with_scrap
-HOKA_RUN_1,upper,polyester,180,1,Supplier_A,VN,0.18,5.5,Higg_MSI,2023,cradle_to_gate,0.99,1.0692000000000002
+HOKA_RUN_1,upper,polyester,180,1,Supplier_A,VN,0.18,4.0,Higg_MSI,2023,cradle_to_gate,0.72,0.7776000000000001
 HOKA_RUN_1,midsole,EVA,220,1,Supplier_B,VN,0.22,3.1,Ecoinvent,2022,cradle_to_gate,0.682,0.7365600000000001
 HOKA_RUN_1,outsole,rubber,200,1,Supplier_C,CN,0.2,2.5,Ecoinvent,2022,cradle_to_gate,0.5,0.54
-HOKA_RUN_1,laces,polyester,20,1,Supplier_A,VN,0.02,5.5,Higg_MSI,2023,cradle_to_gate,0.11,0.1188
+HOKA_RUN_1,laces,polyester,20,1,Supplier_A,VN,0.02,4.0,Higg_MSI,2023,cradle_to_gate,0.08,0.0864
 HOKA_RUN_1,glue,chemicals,30,1,Supplier_D,VN,0.03,4.0,Ecoinvent,2022,cradle_to_gate,0.12,0.1296
