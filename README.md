@@ -10,3 +10,5 @@ This Python project calculates the **cradle-to-grave Scope 3 carbon footprint** 
 
 The project outputs **per-pair and company-level emissions**, and includes a **Google Sheets dashboard** for visualization.
 
+## Run-all Automation
+This project includes a **run_all.ps1** file that pulls in all changes to data files from github, recalculates and updates output csv files, and pushes those changes back to github
