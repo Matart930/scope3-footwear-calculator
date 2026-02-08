@@ -1,8 +1,20 @@
 import pandas as pd
+import os
 
-bom = pd.read_csv("../data/bom.csv")
-eol = pd.read_csv("../data/eol.csv")
-factors = pd.read_csv("../data/eol_factors.csv")
+# ----------------------------------------------------
+# Path setup
+# ----------------------------------------------------
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+DATA_DIR = os.path.join(BASE_DIR, "data")
+OUTPUT_DIR = os.path.join(BASE_DIR, "outputs")
+
+# ----------------------------
+# Load data
+# ----------------------------
+bom = pd.read_csv(os.path.join(DATA_DIR, "bom.csv"))
+eol = pd.read_csv(os.path.join(DATA_DIR, "eol.csv"))
+factors = pd.read_csv(os.path.join(DATA_DIR, "eol_factors.csv"))
 
 weight_kg = bom["weight_g"].sum() / 1000
 
@@ -19,6 +31,9 @@ result = pd.DataFrame({
     "eol_kgco2": [emissions]
 })
 
-result.to_csv("../outputs/eol_summary.csv", index=False)
+# ----------------------------
+# Save
+# ----------------------------
+result.to_csv(os.path.join(OUTPUT_DIR, "eol_summary.csv"), index=False)
 
 print(result)

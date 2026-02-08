@@ -1,10 +1,19 @@
 import pandas as pd
+import os
+
+# ----------------------------------------------------
+# Make paths work from ANY execution location
+# ----------------------------------------------------
+BASE_DIR = os.path.dirname(os.path.dirname(__file__))
+
+DATA_DIR = os.path.join(BASE_DIR, "data")
+OUTPUT_DIR = os.path.join(BASE_DIR, "outputs")
 
 # ----------------------------
 # 1. Load data
 # ----------------------------
-bom = pd.read_csv("C:/Users/matth/Documents/scope3_calculator/data/bom.csv")
-factors = pd.read_csv("C:/Users/matth/Documents/scope3_calculator/data/material_factors.csv")
+bom = pd.read_csv(os.path.join(DATA_DIR, "bom.csv"))
+factors = pd.read_csv(os.path.join(DATA_DIR, "material_factors.csv"))
 
 # ----------------------------
 # 2. Convert grams → kg
@@ -35,8 +44,8 @@ summary = df.groupby("product_id")["emissions_with_scrap"].sum().reset_index()
 # ----------------------------
 # 7. Save results
 # ----------------------------
-df.to_csv("C:/Users/matth/Documents/scope3_calculator/outputs/materials_detailed.csv", index=False)
-summary.to_csv("C:/Users/matth/Documents/scope3_calculator/outputs/materials_summary.csv", index=False)
+df.to_csv(os.path.join(OUTPUT_DIR, "materials_detailed.csv"), index=False)
+summary.to_csv(os.path.join(OUTPUT_DIR, "materials_summary.csv"), index=False)
 
 print("Detailed results:")
 print(df)
