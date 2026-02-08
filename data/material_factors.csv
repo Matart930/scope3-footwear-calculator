@@ -1,5 +1,5 @@
 material,ef_kgco2_per_kg,source,year,type
-polyester,5.5,Higg_MSI,2023,cradle_to_gate
+polyester,4,Higg_MSI,2023,cradle_to_gate
 EVA,3.1,Ecoinvent,2022,cradle_to_gate
 rubber,2.5,Ecoinvent,2022,cradle_to_gate
 chemicals,4.0,Ecoinvent,2022,cradle_to_gate
